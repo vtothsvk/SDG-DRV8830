@@ -4,6 +4,8 @@
 #include "mbed.h"
 #include "drivers/I2C.h"
 
+//sizmaj bit
+
 #define defaultCalValue 1000
 #define defSpeed        0x3F
 #define writeReg        0x00
