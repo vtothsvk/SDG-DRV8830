@@ -1,7 +1,7 @@
 #include "hBridge.h"
 
 pPump::pPump(I2C *boardI2C, uint8_t ADDR){
-    this -> pumpAddr = ADDR;
+    this -> pumpAddr = ADDR << 1;
     this -> pumpI2C = boardI2C;
     this -> currentState = false;
     this -> cal = defaultCalValue;
